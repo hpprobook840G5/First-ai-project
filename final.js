@@ -53,7 +53,7 @@ Generate:
 
 
 
-const API_KEY = "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";
+const API_KEY = "YOUR_GROQ_API_KEY";
 
 async  function generate_plan(){
 const response = await fetch(
