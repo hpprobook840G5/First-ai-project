@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>B18-Diet</title>
+    <link rel="stylesheet" href="diet.css">
+   <link rel="icon" href="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png" type="image/x-icon">
+   <meta charset="UTF-8">
+   </head>
+   <body>
+    <form action="summary.html" method="post">
+    <div class="container">
+        <div class="cards">
+              <datalist id="foods">
+
+        <!-- Protein -->
+        <option value="Eggs">
+        <option value="Chicken">
+        <option value="Fish">
+        <option value="Paneer">
+        <option value="Milk">
+        <option value="Curd">
+        <option value="Soya Chunks">
+        <option value="Dal">
+
+        <!-- Carbohydrates -->
+        <option value="Rice">
+        <option value="Brown Rice">
+        <option value="Chapati">
+        <option value="Idli">
+        <option value="Dosa">
+        <option value="Oats">
+        <option value="Ragi">
+        <option value="Poha">
+
+        <!-- Fruits -->
+        <option value="Banana">
+        <option value="Apple">
+        <option value="Orange">
+
+        <!-- Healthy Fats -->
+        <option value="Peanut Butter">
+        <option value="Groundnuts">
+        <option value="Almonds">
+
+    </datalist>
+    <input list="foods" id="selected_food"  type="text" placeholder="type food and click add" pattern="[A-Za-z ]+">
+    <p id="warning" style="position: relative;bottom:80px;font-size: 30px;"></p>
+    <button type="button" id="button">+Add to List</button>
+        </div>
+        <div class="cards cards2">
+            <h3 style="position: relative;bottom:30px;">Selected Foods:</h3>
+            <ul id="foodlist"></ul>
+            <button type="submit">Next->Summary</button>
+        </div>
+    </div>
+    </form>
+    <script src="diet.js"></script>
+   </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B18-User Details</title>
+    <link rel="stylesheet" href="ud2.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png" type="image/x-icon">
+</head>
+
+<body>
+
+<center>
+
+<form action="diet.html" method="post" class="form-cards">
+
+    <!-- Experience -->
+    <div class="card-wrapper ">
+        <div class="experience card">
+            <label>What's your Experience?</label>
+
+            <div class="exp-option">
+                <input type="radio" id="Beginner" value="Beginner" name="experience" required>
+                <label for="Beginner">Beginner</label>
+            </div>
+
+            <div class="exp-option">
+                <input type="radio" id="Intermediate" value="Intermediate" name="experience">
+                <label for="Intermediate">Intermediate</label>
+            </div>
+
+            <div class="exp-option">
+                <input type="radio" id="Advanced" value="Advanced" name="experience">
+                <label for="Advanced">Advanced</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity -->
+    <div class="card-wrapper ">
+        <div class="activity card">
+            <label>Activity Level:</label>
+
+            <div class="active-option">
+                <input type="radio" id="sedentary" value="sedentary" name="activity" required>
+                <label for="sedentary">Sedentary</label>
+            </div>
+
+            <div class="active-option">
+                <input type="radio" id="light" value="light" name="activity">
+                <label for="light">Lightly Active</label>
+            </div>
+
+            <div class="active-option">
+                <input type="radio" id="moderate" value="moderate" name="activity">
+                <label for="moderate">Moderately Active</label>
+            </div>
+
+            <div class="active-option">
+                <input type="radio" id="high" value="high" name="activity">
+                <label for="high">Highly Active</label>
+            </div>
+
+            <div class="active-option">
+                <input type="radio" id="athlete" value="athlete" name="activity">
+                <label for="athlete">Athlete</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goal -->
+    <div class="card-wrapper ">
+        <div class="goal card" style="position: relative;bottom:60px;">
+            <label>Goal:</label>
+
+            <div class="goal-option">
+                <input type="radio" id="bulk" value="bulk" name="goal" required>
+                <label for="bulk">Bulk (Build Muscle)</label>
+            </div>
+
+            <div class="goal-option">
+                <input type="radio" id="cut" value="cut" name="goal">
+                <label for="cut">Cut (Lose Fat)</label>
+            </div>
+
+            <div class="goal-option">
+                <input type="radio" id="recomp" value="recomp" name="goal">
+                <label for="recomp">Recomposition (if  you're Skinny Fat)</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workout Days -->
+    <div class="card-wrapper ">
+        <div class="days card">
+            <label for="days">Workout Days (per week)</label>
+
+            <input
+                type="number"
+                id="days"
+                name="days"
+                min="3"
+                max="6"
+                required
+                placeholder="At least 3">
+        </div>
+    </div>
+    <center>
+         <div class="button" style="position: relative;left:240px" >
+        <button type="submit">Next➡️Diet Chart</button>
+    </div>
+    </center>
+   
+
+</form>
+
+</center>
+
+<script src="ud2.js"></script>
+
+</body>
+</html>

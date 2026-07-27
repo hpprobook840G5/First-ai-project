@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B18-User Details</title>
+        <link rel="stylesheet" href="ud1.css">
+        <link rel="icon" href="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png" type="image/x-icon">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+        <form action="ud2.html" method="post">
+            <div class="form-container">
+            <div class="welcoming">Tell Us About Yourself</div>
+            <div class="app-name">
+                <label for="app-name">Name:</label><br>
+                <input id="app-name" name="app-name" type="text" required placeholder="Your Name" minlength="3" maxlength="30">
+            </div>
+            <div class="age">
+                <label for="age">Age:</label><br>
+                <input id="age" name="age" type="number" min="10" max="100" required placeholder="Your age">
+            </div>
+            <div class="gender">
+                <label for="gender" style="position: relative;top:30px;">Gender:</label><br>
+                <div class="gender-option"><input type="radio" required id="male" value="male" name="gender">
+                <label>Male</label></div>
+                <div class="gender-option">
+                    <input type="radio" required id="female" value="female" name="gender">
+                    <label>Female</label>
+                </div>
+                <div class="gender-option">
+                    <input type="radio" required id="other" value="other" name="gender">
+                    <label>Other</label>
+                </div>
+            </div>
+            <div class="height">
+                <label for="height">Height:</label><br>
+                <input id="height" name="height" type="number" required placeholder="Height(must be in cms)" min="100" max="250">
+            </div>
+            <div class="weight">
+                <label for="weight">Weight:</label><br>
+                <input id="weight" name="weight" type="number" required placeholder="Weight(must be in kgs)" min="30" max="150">
+            </div>
+            <div class="next">
+                <button type="submit">Next-></button>
+            </div>
+            </div>
+        </form>
+        </center>
+        <script src="ud1.js"></script>
+    </body>
+</html>

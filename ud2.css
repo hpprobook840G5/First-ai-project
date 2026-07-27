@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(
+        135deg,
+        #0F172A 0%,
+        #1E3A8A 50%,
+        #00AEEF 100%
+    );
+}
+
+body,html{
+    margin:0;
+}
+
+.form-cards{
+    display:grid;grid-template-columns: 1fr 1fr;gap:20px;margin:20px;
+    
+    
+}
+
+
+.form-cards .experience{
+    display:flex;flex-direction: column;gap:10px;
+    /* animation:float 5s ease-in-out 0.7s infinite forwards none; */
+}
+
+.form-cards .experience .exp-option{
+    display: flex;align-items: flex-start;gap:10px;
+}
+.form-cards .activity{
+    display:flex;flex-direction: column;gap:10px;
+    /* animation:float 5s ease-in-out 0.7s infinite forwards none; */
+}
+
+.form-cards .activity .active-option{
+    display: flex;align-items: flex-start;gap:10px;
+}
+.form-cards .goal{
+    display:flex;flex-direction: column;gap:10px;
+    /* animation:float 5s ease-in-out 0.7s infinite forwards none; */
+}
+
+.form-cards .goal .goal-option{
+    display: flex;align-items: flex-start;gap:10px;
+}
+
+
+.card{
+      background:rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:25px;
+    color:white;
+    animation:float 7s ease-in-out  infinite;
+    
+    backdrop-filter: blur(5px);
+    display:flex;
+    align-items: flex-start;justify-content: center;
+    font-size: 25px;font-weight:larger;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-15px); /* higher bounce */
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(10px); /* softer dip */
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.form-cards .days{
+    display: flex;flex-direction: column;
+    justify-content: space-evenly;
+    /* animation:float 5s ease-in-out 0.7s infinite forwards none; */
+}
+
+ .form-cards .days input{
+    width:250px;height:40px;border-radius: 20px;border:1px solid #00AEEF;
+    transition:transform 0.2s linear;outline:none;font-size: 20px;
+}
+ .form-cards .days input:hover{
+    transform: translateY(-4px);
+}
+.form-cards .days input:focus{
+    border-color:#ff6b00;
+    box-shadow:0 0 10px #ff6b00;
+}
+
+button{
+    width:250px;height:40px;border-radius: 20px;border:1px solid #00AEEF;
+    transition: transform 0.2s linear;background-color:#00AEEF;
+    font-size: 20px;padding:5px;color:white;
+}
+button:hover{
+    transform:translateY(-4px);color:blue;background: #00AEEF;
+}
+button:focus{
+    border-color:#ff6b00;
+    box-shadow:0 0 10px #ff6b00;
+}
+
+
+

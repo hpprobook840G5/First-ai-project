@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B18-Signup</title>
+        <link rel="stylesheet" href="signup.css">
+        <link rel="icon" href="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png" type="image/x-icon">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+        <form action="ud1.html" method="post" id="form">
+            <div class="form-container">
+                <div class="logo"><img src="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png" alt="Logo"></div>
+                <div class="welocome">Let's Get Started!</div>
+                <div class="user_name">
+                    <label for="username">Username:</label><br>
+                    <input id="username" class="input" name="username" type="text" required placeholder="Enter your Username" minlength="3" maxlength="30">
+
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" class="input" id="email" name="email" required placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+                <div class="password">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="pass1" class="input" required placeholder="Enter your Password" minlength="8"><span id="eye1" style="cursor: pointer;">&#128065;</span>
+                    <p id="strength" class="strength"></p>
+                </div>
+                <div class="re-password">
+                    <label for="re-password"> Re-type Password:</label><br>
+                    <input type="password" id="pass2" class="input" required placeholder="Retype Password" minlength="8"><span id="eye2" style="cursor: pointer;">&#128065;</span>
+                    <p id="error" class="error"></p>
+                </div>
+                <div class="tac">
+                    <input type="checkbox" required><label for="checkbox">I Agree to <a href="tac.html">Terms And Conditions</a></label>
+                </div>
+                <div class="signup">
+                    <button type="submit">Signup</button>
+                </div>
+                <div class="login">
+                    <label>Have an Account?</label>  <a href="login.html">Login</a>
+                </div>
+
+                
+            </div>
+        </form>
+        </center>
+        <script src="signup.js"></script>
+    </body>
+</html>

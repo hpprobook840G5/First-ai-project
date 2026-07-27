@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>B18-Download plan</title>
+        <link rel="stylesheet" href="final.css">
+        <meta charset="UTF-8">
+        <link rel="icon" href="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png" type="image/x-icon">
+    </head>
+    <body>
+        <center>
+        <div class="container">
+            <img src="ChatGPT Image Jul 24, 2026, 12_27_54 PM.png">
+            <h1>🎯 Your Fitness Profile is Ready! </h1>
+            <p> We are creating a personalized workout and diet plan    |
+|  based on your goals, experience and preferences.</p>
+            <p id="loader" data-target="100">Loading 0%</p>
+            <p>Generating your AI Fitness Plan...</p>
+            <p id="message"></p>
+            <button id="download" hidden>Download PDF</button>
+            <div class="two-buttons">
+                <button id="home" hidden onclick="home()">HOME-></button>
+                <button id="again" hidden onclick="plan()">Generate Another Plan-></button>
+            </div>
+            
+        </div>
+        </center>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="final.js"></script>
+
+        
+    </body>
+</html>
